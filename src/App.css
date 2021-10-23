@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+
+body {
+	font-family: 'Zen Kaku Gothic New';
+}
+
+.App {
+  padding: 50px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom styles */
+.fa-times {
+	margin-left: 5px;
+}
+
+.fa-search {
+	margin-left: 10px;
+}
+
+.fa-ellipsis-h{
+	font-size: 14px;
+}
+
+.navbar-left-space span {
+	color: #8e9295;
+	font-weight: 600;
+}
+
+.nav-pipe-symbol{
+	align-self: center;
+	color: #8e9295;
+	font-weight: bold;
+}
+
+button {
+	background: transparent;
+	color: white;
+	border: none;
+	outline: none;
+	padding: 10px;
+	cursor: pointer;
+	margin: 5px;
+	border: 2px solid #8e9295;
+	border-radius: 5px;
+	color: #8e9295;
+	font-weight: 800;
+	font-family: 'Zen Kaku Gothic New';
+}
+
+.table-scroll {
+	position:relative;
+	margin:auto;
+	overflow:hidden;
+	border:1px solid #8e9295;
+}
+.table-wrap {
+	width:100%;
+	overflow: hidden;
+}
+.table-scroll table {
+	width:100%;
+	margin:auto;
+	border-collapse:separate;
+	border-spacing:0;
+}
+.table-scroll th, .table-scroll td {
+	padding: 20px;
+	border:1px solid #8e9295;
+	background:#fff;
+	white-space:nowrap;
+	vertical-align:top;
+}
+.table-scroll thead, .table-scroll tfoot {
+	background:#f9f9f9;
+}
+.clone {
+	position:absolute;
+	top:0;
+	left:0;
+	pointer-events:none;
+}
+.clone th, .clone td {
+	visibility:hidden
+}
+.clone td, .clone th {
+	border-color:transparent
+}
+.clone tbody th {
+	visibility:visible;
+	color:red;
+}
+.clone .fixed-side {
+	border:1px solid #8e9295;
+	visibility:visible;
+}
+.clone thead, .clone tfoot{background:transparent;}
+
+.table-top{
+	width: 100%;
+}
+
+.navbar-table{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 2px solid #8e9295;
+	border-bottom: none;
+}
+
+.table-response{
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+}
+
+.table-button{
+	background: transparent;
+	color: #8e9295;
+	font-size: 20px;
+	padding: 0px;
+	margin: 0px;
+	font-weight: bold;
+	align-self: center;
+	border: none;
+}
+
+.navbar-left-space{
+	padding-left: 10px;
+}
+
+input[type='checkbox'] {
+    -webkit-appearance:none;
+    width:20px;
+    height:20px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+	cursor: pointer;
+}
+input[type='checkbox']:checked {
+    background: #abd;
+}
+
+@media screen and (max-width: 576px){
+	.table-scroll th, .table-scroll td {
+		white-space: pre-line;
+	}
+	.table-response{
+		display: block;
+	}
+}
