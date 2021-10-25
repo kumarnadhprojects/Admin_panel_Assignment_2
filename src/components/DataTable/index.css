@@ -1,0 +1,52 @@
+.bg-open {
+	color: green !important;
+}
+
+.bg-inprocess{
+    color: blue !important;
+}
+
+.bg-onhold {
+    color: orange !important;
+}
+
+.bg-closed{
+    color: silver !important;
+}
+
+.btn-primary{
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.dot {
+    visibility: hidden;
+    display: flex;
+}
+
+.source-container{
+    display: flex;
+}
+
+tr:hover .dot{
+    visibility:visible;
+}
+
+.circle-icon{
+    border: 1px solid #898989;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+tr:hover{
+    cursor: pointer;
+}
+
+.dropdown-color{
+	color: #8e9295 !important;
+}

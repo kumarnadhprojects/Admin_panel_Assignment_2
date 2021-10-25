@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
 
 body {
-	font-family: 'Zen Kaku Gothic New';
+	font-family: 'Zen Kaku Gothic New' !important;
 }
 
 .App {
-  padding: 50px;
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-top: 50px;
 }
 
 .App-logo {
@@ -50,43 +52,73 @@ body {
 
 .fa-search {
 	margin-left: 10px;
+	font-size: 20px;
 }
 
 .fa-ellipsis-h{
-	font-size: 14px;
+	font-size: 14px !important;
+}
+
+.three-dots {
+	width: 40px !important;
 }
 
 .navbar-left-space span {
-	color: #8e9295;
-	font-weight: 600;
+	color: #8e9295 !important;
 }
 
 .nav-pipe-symbol{
-	align-self: center;
-	color: #8e9295;
-	font-weight: bold;
+	align-self: center !important;
+	color: #8e9295 !important;
+	margin-right: 7px !important;
+}
+
+.right-nav {
+	margin-right: 20px !important;
+}
+
+.button-left{
+	padding: 5px !important;
+	margin: 0px !important;
+	width: 40px !important;
+	color: #8e9295 !important;
+}
+
+.button-right {
+	padding: 5px !important;
+	margin: 0px !important;
+	width: 40px !important;
+	color: #8e9295 !important;
+}
+
+.btn-custom {
+	background: transparent;
+	padding: 5px !important;
+	width: 60px !important;
+	margin: 5px !important;
+	border: 1px solid #8e9295 !important;
+	border-radius: 5px !important;
+	font-family: 'Zen Kaku Gothic New' !important;
+	color: #8e9295 !important;
 }
 
 button {
 	background: transparent;
-	color: white;
-	border: none;
-	outline: none;
-	padding: 10px;
-	cursor: pointer;
-	margin: 5px;
-	border: 2px solid #8e9295;
-	border-radius: 5px;
-	color: #8e9295;
-	font-weight: 800;
-	font-family: 'Zen Kaku Gothic New';
+	padding: 5px !important;
+	width: 60px !important;
+	margin: 5px !important;
+	border: 1px solid #8e9295 !important;
+	border-radius: 5px !important;
+	font-family: 'Zen Kaku Gothic New' !important;
 }
 
 .table-scroll {
 	position:relative;
 	margin:auto;
 	overflow:hidden;
-	border:1px solid #8e9295;
+	border-left:1px solid #8e9295;
+	border-right:1px solid #8e9295;
+	border-top:1px solid #8e9295;
 }
 .table-wrap {
 	width:100%;
@@ -99,14 +131,18 @@ button {
 	border-spacing:0;
 }
 .table-scroll th, .table-scroll td {
-	padding: 20px;
-	border:1px solid #8e9295;
-	background:#fff;
+	padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 14px;
+	border-bottom:1px solid #8e9295;
 	white-space:nowrap;
 	vertical-align:top;
+	text-align: left;
+	color: #8e9295;
 }
+
 .table-scroll thead, .table-scroll tfoot {
-	background:#f9f9f9;
+	background: white;
 }
 .clone {
 	position:absolute;
@@ -114,66 +150,106 @@ button {
 	left:0;
 	pointer-events:none;
 }
+
 .clone th, .clone td {
-	visibility:hidden
+	visibility:hidden;
 }
 .clone td, .clone th {
-	border-color:transparent
+	border-color:transparent;
 }
 .clone tbody th {
 	visibility:visible;
-	color:red;
 }
 .clone .fixed-side {
-	border:1px solid #8e9295;
+	border-bottom:1px solid #8e9295;
+	border-right: 1px solid #8e9295;
+	background-color: white;
 	visibility:visible;
 }
-.clone thead, .clone tfoot{background:transparent;}
+.clone thead, .clone tfoot{
+	background:transparent;
+}
 
 .table-top{
 	width: 100%;
 }
 
 .navbar-table{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border: 2px solid #8e9295;
-	border-bottom: none;
+	display: flex !important;
+	justify-content: space-between !important;
+	align-items: center !important;
+	border: 1px solid #8e9295 !important;
+	border-bottom: none !important;
+	padding: 5px !important;
+}
+
+.status {
+	width: 85px !important;
+}
+
+.status i {
+	margin-left: 5px !important;
 }
 
 .table-response{
-	display: flex;
-	justify-content: space-between;
-	padding: 5px;
+	display: flex !important;
+	justify-content: space-between !important;
+	align-items: center !important;
 }
 
 .table-button{
-	background: transparent;
-	color: #8e9295;
-	font-size: 20px;
-	padding: 0px;
-	margin: 0px;
-	font-weight: bold;
-	align-self: center;
-	border: none;
+	background: transparent !important;
+	color: #8e9295 !important;
+	font-size: 20px !important;
+	padding: 0px !important;
+	margin: 0px !important;
+	align-self: center !;
+	border: none !important;
 }
 
 .navbar-left-space{
-	padding-left: 10px;
+	padding-left: 10px !important;
 }
 
 input[type='checkbox'] {
-    -webkit-appearance:none;
     width:20px;
     height:20px;
     background:white;
-    border-radius:5px;
-    border:2px solid #555;
+    border:1px solid #8e9295;
 	cursor: pointer;
+	pointer-events: auto;
 }
-input[type='checkbox']:checked {
-    background: #abd;
+
+.ml {
+	margin-left: 10px;
+}
+
+.footer {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+	color: #8e9295 !important;
+	border-bottom: 1px solid #8e9295 !important;
+	border-left: 1px solid #8e9295 !important;
+	border-right: 1px solid #8e9295 !important;
+	margin-bottom: 20px !important;
+}
+
+.footer-button {
+	color: #8e9295 !important;
+	width: 30px !important;
+}
+
+.footer .footer-pagination{
+	border: 1px solid #8e9295 !important;
+	border-radius: 0px !important;
+	width: 40px !important;
+	color: #8e9295 !important;
+	font-weight: 800;
+}
+
+.dropdown-color{
+	color: #8e9295 !important;
 }
 
 @media screen and (max-width: 576px){
@@ -182,5 +258,38 @@ input[type='checkbox']:checked {
 	}
 	.table-response{
 		display: block;
+	}
+
+	.App {
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 30px;
+	}
+}
+
+@media screen and (min-width: 576px){
+	.App {
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 30px;
+	}
+
+	.table-scroll th, .table-scroll td {
+		padding-left: 10px;
+		padding-right: 0px;
+		padding-top: 0px;
+	}
+}
+
+@media screen and (min-width: 992px){
+	.App {
+		padding-left: 160px;
+		padding-right: 130px;
+		padding-top: 50px;
+	}
+	.table-scroll th, .table-scroll td {
+		padding-left: 14px;
+		padding-right: 14px;
+		padding-top: 14px;
 	}
 }
