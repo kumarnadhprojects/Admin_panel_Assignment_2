@@ -4,10 +4,10 @@ import * as React from "react";
 import Dropdown from 'react-bootstrap/Dropdown';
 
 const sideScroll = (
-  element: HTMLDivElement,
-  speed: number,
-  distance: number,
-  step: number
+  element,
+  speed,
+  distance,
+  step
 ) => {
   let scrollAmount = 0;
   const slideTimer = setInterval(() => {
@@ -63,7 +63,7 @@ function App() {
                     <div>
                       <Dropdown>
                         <Dropdown.Toggle>
-                          <button className="btn table-button" type="button">
+                          <button type="button" className="btn table-button">
                             <i class="fas fa-ellipsis-h"></i>
                           </button>
                         </Dropdown.Toggle>

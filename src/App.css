@@ -111,6 +111,12 @@ button {
 	border: 1px solid #8e9295 !important;
 	border-radius: 5px !important;
 	font-family: 'Zen Kaku Gothic New' !important;
+	outline: none;
+}
+
+
+.btn:focus {
+	box-shadow: none !important;
 }
 
 .table-scroll {
@@ -166,6 +172,7 @@ button {
 	border-right: 1px solid #8e9295;
 	background-color: white;
 	visibility:visible;
+	box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 5px 0 rgb(0 0 0 / 19%);
 }
 .clone thead, .clone tfoot{
 	background:transparent;
@@ -199,16 +206,16 @@ button {
 }
 
 .table-button{
-	background: transparent !important;
 	color: #8e9295 !important;
 	font-size: 20px !important;
 	padding: 0px !important;
 	margin: 0px !important;
-	align-self: center !;
+	align-self: center;
 	border: none !important;
 }
 
 .navbar-left-space{
+	position: relative;
 	padding-left: 10px !important;
 }
 
@@ -251,6 +258,28 @@ input[type='checkbox'] {
 
 .dropdown-color{
 	color: #8e9295 !important;
+}
+
+.dropdown-menu::before {
+    border-bottom: 17px solid rgba(0, 0, 0, 0.6);
+    border-left: 9px solid rgba(0, 0, 0, 0);
+    border-right: 9px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    left: 16%; /* position */
+    position: absolute;
+    top: -17px;
+}
+
+.dropdown-menu::after {
+    border-bottom: 17px solid #FFFFFF;
+    border-left: 9px solid rgba(0, 0, 0, 0);
+    border-right: 9px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    left: 16%; /* position */
+    position: absolute;
+    top: -17px;
 }
 
 @media screen and (max-width: 576px){

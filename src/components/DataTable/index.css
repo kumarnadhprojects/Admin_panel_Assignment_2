@@ -19,6 +19,7 @@
     border: none !important;
 }
 
+
 .dot {
     visibility: hidden;
     display: flex;
@@ -50,3 +51,4 @@ tr:hover{
 .dropdown-color{
 	color: #8e9295 !important;
 }
+
